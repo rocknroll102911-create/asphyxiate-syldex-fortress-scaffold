@@ -8,9 +8,9 @@ describe('BuilderCore', () => {
 
   beforeEach(() => {
     core = new BuilderCore({
-      industry: 'Defense and Aerospace',
-      backend_stack: 'Syntex runtime with IronForge integration',
-      frontend_pattern: 'Event-driven slot-based architecture',
+      industry: 'Manufacturing',
+      backend_stack: 'Serverless (Deno Deploy)',
+      frontend_pattern: 'Dashboard / Admin',
     });
   });
 
@@ -32,9 +32,9 @@ describe('BuilderCore', () => {
 describe('generate() integration', () => {
   it('returns an array of project files', async () => {
     const result = await generate({
-      industry: 'Defense and Aerospace',
-      backend_stack: 'Syntex runtime with IronForge integration',
-      frontend_pattern: 'Event-driven slot-based architecture',
+      industry: 'Manufacturing',
+      backend_stack: 'Serverless (Deno Deploy)',
+      frontend_pattern: 'Dashboard / Admin',
     });
     expect(Array.isArray(result.files)).toBe(true);
     expect(result.files.length).toBeGreaterThan(0);
@@ -42,9 +42,9 @@ describe('generate() integration', () => {
 
   it('every file has a path and content', async () => {
     const result = await generate({
-      industry: 'Defense and Aerospace',
-      backend_stack: 'Syntex runtime with IronForge integration',
-      frontend_pattern: 'Event-driven slot-based architecture',
+      industry: 'Manufacturing',
+      backend_stack: 'Serverless (Deno Deploy)',
+      frontend_pattern: 'Dashboard / Admin',
     });
     for (const file of result.files) {
       expect(file.path).toBeTruthy();
