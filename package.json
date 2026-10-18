@@ -1,0 +1,1 @@
+{"name":"asphyxiate-builder","version":"1.0.0","dependencies":{"zod":"^3.22.0","pino":"^8.16.0","axios":"^1.6.0"},"devDependencies":{"typescript":"^5.2.0","@types/node":"^20.0.0"},"scripts":{"typecheck":"tsc --noEmit","lint":"eslint src --ext .ts"}}
